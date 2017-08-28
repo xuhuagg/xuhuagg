@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="CaoXuHua">
 <meta property="og:description" content="安装完Node、git、hexo，后续的初始化过程建议在Git Bash的控制台，有的教程一下在系统控制台 ，一下又切换到Git Bash，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。     购买域名后绑定github pages后域名解析迟迟不生效。控制台ping我的个人域名没有响应， ping xuhuagg.github.io显示的是美国主机的地址">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-24T14:24:26.262Z">
+<meta property="og:updated_time" content="2017-08-27T15:02:15.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立博客的过程中遇到的坑">
 <meta name="twitter:description" content="安装完Node、git、hexo，后续的初始化过程建议在Git Bash的控制台，有的教程一下在系统控制台 ，一下又切换到Git Bash，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。     购买域名后绑定github pages后域名解析迟迟不生效。控制台ping我的个人域名没有响应， ping xuhuagg.github.io显示的是美国主机的地址">
@@ -114,7 +114,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -159,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -205,6 +205,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
@@ -221,16 +231,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -332,6 +332,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/24/建立博客的过程中遇到的坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/08/24/建立博客的过程中遇到的坑/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -360,9 +371,8 @@
 <li>安装完Node、git、hexo，后续的初始化过程建议在<strong>Git Bash</strong>的控制台，有的教程一下在<strong>系统控制台</strong> ，一下又切换到<strong>Git Bash</strong>，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。  </li>
 </ul>
 <ul>
-<li><p>购买域名后绑定<strong>github pages</strong>后域名解析迟迟不生效。控制台<strong>ping</strong>我的个人域名没有响应， <strong>ping</strong> <em>xuhuagg.github.io</em>显示的是美国主机的地址。但我访问 <em>xuhuagg.github.io</em> 没有显示我的 <strong>github pages</strong> 页面，我当时就傻眼了，以为是系统延迟。</p>
-<p>  等到第二天还是访问不到。于是我重开了一个号还是遇到了一样的情况。百度了好久，发现原来是cn后缀的域名实名制之前会进入<strong>serverHold</strong> 状态，是2009年12月14日以后由CNNIC对CN域名新增加的一种域名状态，主要原因就是域名没有备案。域名在这个状态下，所有解析都无法生效，要取消这个状态，只有通过注册商，向CNNIC提交该域名的备案号，CNNIC会在三个工作日内审核并取消该状态。</p>
-</li>
+<li>购买域名后绑定<strong>github pages</strong>后域名解析迟迟不生效。控制台<strong>ping</strong>我的个人域名没有响应， <strong>ping</strong> <em>xuhuagg.github.io</em>显示的是美国主机的地址。但我访问 <em>xuhuagg.github.io</em> 没有显示我的 <strong>github pages</strong> 页面，我当时就傻眼了，以为是系统延迟。<a id="more"></a>
+  等到第二天还是访问不到。于是我重开了一个号还是遇到了一样的情况。百度了好久，发现原来是cn后缀的域名实名制之前会进入<strong>serverHold</strong> 状态，是2009年12月14日以后由CNNIC对CN域名新增加的一种域名状态，主要原因就是域名没有备案。域名在这个状态下，所有解析都无法生效，要取消这个状态，只有通过注册商，向CNNIC提交该域名的备案号，CNNIC会在三个工作日内审核并取消该状态。</li>
 </ul>
 <hr>
 
@@ -419,6 +429,13 @@
           
   <div class="comments" id="comments">
     
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
   </div>
 
 
@@ -467,10 +484,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -491,12 +508,50 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xuhuagg" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/151496045" target="_blank" title="Douban">
+                  
+                    <i class="fa fa-fw fa-heart-o"></i>
+                  
+                    
+                      Douban
+                    
+                </a>
+              </span>
+            
+          
         </div>
 
         
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://caoxuhua.cn/" title="Me" target="_blank">Me</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
         
@@ -532,16 +587,14 @@
 
 
   <div class="powered-by">
-    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+    <a class="theme-link" href="http://caoxuhua.cn">Astronaut</a>
   </div>
 
   <span class="post-meta-divider">|</span>
 
   <div class="theme-info">
-    主题 &mdash;
-    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-      NexT.Muse
-    </a>
+    其他 &mdash;
+    to be continue...
   </div>
 
 
@@ -589,6 +642,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -612,6 +668,12 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
 
 
   
@@ -644,6 +706,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://-夏天.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/08/24/建立博客的过程中遇到的坑/';
+          this.page.identifier = '2017/08/24/建立博客的过程中遇到的坑/';
+          this.page.title = '建立博客的过程中遇到的坑';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://-夏天.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -656,10 +738,6 @@
   
 
 
-
-
-
-  
 
 
 
