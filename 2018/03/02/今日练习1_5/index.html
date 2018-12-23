@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,bug," />
+  <meta name="keywords" content="Java,自测," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="安装完Node、git、hexo，后续的初始化过程建议在Git Bash的控制台，有的教程一下在系统控制台 ，一下又切换到Git Bash，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。     购买域名后绑定github pages后域名解析迟迟不生效。控制台ping我的个人域名没有响应， ping xuhuagg.github.io显示的是美国主机的地址">
-<meta name="keywords" content="hexo,bug">
+<meta name="description" content="涉及 0.合并两个排序链表 1.GCroot是什么？哪些对象可以做GCroot 2.HashMap的put过程(描述过程并手写) 3.手写一个死锁 4.ACID及并发一致性问题和四种隔离级别的解释 5.有哪些垃圾回收器">
+<meta name="keywords" content="Java,自测">
 <meta property="og:type" content="article">
-<meta property="og:title" content="建立博客的过程中遇到的坑">
-<meta property="og:url" content="http://yoursite.com/2017/08/24/建立博客的过程中遇到的坑/index.html">
-<meta property="og:site_name" content="-夏天">
-<meta property="og:description" content="安装完Node、git、hexo，后续的初始化过程建议在Git Bash的控制台，有的教程一下在系统控制台 ，一下又切换到Git Bash，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。     购买域名后绑定github pages后域名解析迟迟不生效。控制台ping我的个人域名没有响应， ping xuhuagg.github.io显示的是美国主机的地址">
+<meta property="og:title" content="今日练习1-5">
+<meta property="og:url" content="http://yoursite.com/2018/03/02/今日练习1_5/index.html">
+<meta property="og:site_name" content="-芳华">
+<meta property="og:description" content="涉及 0.合并两个排序链表 1.GCroot是什么？哪些对象可以做GCroot 2.HashMap的put过程(描述过程并手写) 3.手写一个死锁 4.ACID及并发一致性问题和四种隔离级别的解释 5.有哪些垃圾回收器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-27T15:02:15.343Z">
+<meta property="og:updated_time" content="2018-12-23T12:14:47.145Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建立博客的过程中遇到的坑">
-<meta name="twitter:description" content="安装完Node、git、hexo，后续的初始化过程建议在Git Bash的控制台，有的教程一下在系统控制台 ，一下又切换到Git Bash，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。     购买域名后绑定github pages后域名解析迟迟不生效。控制台ping我的个人域名没有响应， ping xuhuagg.github.io显示的是美国主机的地址">
+<meta name="twitter:title" content="今日练习1-5">
+<meta name="twitter:description" content="涉及 0.合并两个排序链表 1.GCroot是什么？哪些对象可以做GCroot 2.HashMap的put过程(描述过程并手写) 3.手写一个死锁 4.ACID及并发一致性问题和四种隔离级别的解释 5.有哪些垃圾回收器">
 
 
 
@@ -113,8 +113,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"right","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/24/建立博客的过程中遇到的坑/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/02/今日练习1_5/"/>
 
 
 
 
 
-  <title>建立博客的过程中遇到的坑 | -夏天</title>
+  <title>今日练习1-5 | -芳华</title>
   
 
 
@@ -159,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -170,7 +170,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">-夏天</span>
+        <span class="site-title">-芳华</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -234,16 +234,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-web">
-          <a href="/web" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-bath"></i> <br />
-            
-            web作业
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -277,16 +267,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/24/建立博客的过程中遇到的坑/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/02/今日练习1_5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="-夏天">
+      <meta itemprop="name" content="-芳华">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170820/1DjabCdLGm.png">
+      <meta itemprop="image" content="http://caoxuhua.cn/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="-夏天">
+      <meta itemprop="name" content="-芳华">
     </span>
 
     
@@ -294,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">建立博客的过程中遇到的坑</h1>
+          <h1 class="post-title" itemprop="name headline">今日练习1-5</h1>
         
 
         <div class="post-meta">
@@ -306,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-24T18:29:28+08:00">
-                2017-08-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-02T00:00:00+08:00">
+                2018-03-02
               </time>
             
 
@@ -329,8 +319,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/自测/" itemprop="url" rel="index">
+                    <span itemprop="name">自测</span>
                   </a>
                 </span>
 
@@ -347,9 +348,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/24/建立博客的过程中遇到的坑/#comments" itemprop="discussionUrl">
+                <a href="/2018/03/02/今日练习1_5/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/24/建立博客的过程中遇到的坑/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/02/今日练习1_5/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,6 +361,25 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  72
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -377,14 +397,15 @@
       
 
       
-        <ul>
-<li>安装完Node、git、hexo，后续的初始化过程建议在<strong>Git Bash</strong>的控制台，有的教程一下在<strong>系统控制台</strong> ，一下又切换到<strong>Git Bash</strong>，第一次初始化hexo就被一个教程弄混了，hexo相关组件出了问题，最后只好重新安装。  </li>
+        <h2 id="涉及"><a href="#涉及" class="headerlink" title="涉及"></a>涉及</h2><ul>
+<li>0.合并两个排序链表</li>
+<li>1.GCroot是什么？哪些对象可以做GCroot</li>
+<li>2.HashMap的put过程(描述过程并手写)</li>
+<li>3.手写一个死锁</li>
+<li>4.ACID及并发一致性问题和四种隔离级别的解释</li>
+<li>5.有哪些垃圾回收器</li>
 </ul>
-<ul>
-<li>购买域名后绑定<strong>github pages</strong>后域名解析迟迟不生效。控制台<strong>ping</strong>我的个人域名没有响应， <strong>ping</strong> <em>xuhuagg.github.io</em>显示的是美国主机的地址。但我访问 <em>xuhuagg.github.io</em> 没有显示我的 <strong>github pages</strong> 页面，我当时就傻眼了，以为是系统延迟。<a id="more"></a>
-  等到第二天还是访问不到。于是我重开了一个号还是遇到了一样的情况。百度了好久，发现原来是cn后缀的域名实名制之前会进入<strong>serverHold</strong> 状态，是2009年12月14日以后由CNNIC对CN域名新增加的一种域名状态，主要原因就是域名没有备案。域名在这个状态下，所有解析都无法生效，要取消这个状态，只有通过注册商，向CNNIC提交该域名的备案号，CNNIC会在三个工作日内审核并取消该状态。</li>
-</ul>
-<hr>
+<a id="more"></a>
 
       
     </div>
@@ -402,9 +423,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
-            <a href="/tags/bug/" rel="tag"># bug</a>
+            <a href="/tags/自测/" rel="tag"># 自测</a>
           
         </div>
       
@@ -417,15 +438,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/01/今日练习1_4/" rel="next" title="今日练习1-4">
+                <i class="fa fa-chevron-left"></i> 今日练习1-4
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/05/思路/" rel="prev" title="基于BDP数据可视化平台的知乎用户分析">
-                基于BDP数据可视化平台的知乎用户分析 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -484,13 +505,22 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://ouxp7c91b.bkt.clouddn.com/blog/170820/1DjabCdLGm.png"
-               alt="-夏天" />
-          <p class="site-author-name" itemprop="name">-夏天</p>
+               src="http://caoxuhua.cn/images/avatar.png"
+               alt="-芳华" />
+          <p class="site-author-name" itemprop="name">-芳华</p>
            
               <p class="site-description motion-element" itemprop="description">you reap what you sow.</p>
           
@@ -500,7 +530,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -511,7 +541,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -522,7 +552,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -542,17 +572,6 @@
                   
                     
                       GitHub
-                    
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.douban.com/people/151496045" target="_blank" title="Douban">
-                  
-                    <i class="fa fa-fw fa-heart-o"></i>
-                  
-                    
-                      Douban
                     
                 </a>
               </span>
@@ -597,6 +616,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#涉及"><span class="nav-number">1.</span> <span class="nav-text">涉及</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -617,7 +652,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">-夏天</span>
+  <span class="author" itemprop="copyrightHolder">-芳华</span>
 
   
 </div>
@@ -675,12 +710,11 @@
   
 
 
-
-
-
-
   
-  
+
+
+
+
 
 
 
@@ -707,10 +741,7 @@
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -724,6 +755,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
@@ -744,18 +782,18 @@
   
 
     
-      <script id="dsq-count-scr" src="https://-夏天.disqus.com/count.js" async></script>
+      <script id="dsq-count-scr" src="https://-芳华.disqus.com/count.js" async></script>
     
 
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/08/24/建立博客的过程中遇到的坑/';
-          this.page.identifier = '2017/08/24/建立博客的过程中遇到的坑/';
-          this.page.title = '建立博客的过程中遇到的坑';
+          this.page.url = 'http://yoursite.com/2018/03/02/今日练习1_5/';
+          this.page.identifier = '2018/03/02/今日练习1_5/';
+          this.page.title = '今日练习1-5';
         };
         var d = document, s = d.createElement('script');
-        s.src = 'https://-夏天.disqus.com/embed.js';
+        s.src = 'https://-芳华.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
       </script>
