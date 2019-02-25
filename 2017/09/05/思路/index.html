@@ -102,20 +102,19 @@
 <meta property="og:site_name" content="-芳华">
 <meta property="og:description" content="涉及 Java线程池、连接池 pc端、手机端抓包 Jsoup、正则分析 数据库JDBC BDP数据分析平台 多知乎账号防封号">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/3hJ9gd5mBH.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170828/6KiFLd786A.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/eH1hBgfBbA.jpg?imageslim">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s01.jpg">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s03.jpg">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s04.jpg">
 <meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/80j8l5j9jE.jpg?imageslim">
 <meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/bihm9mjC05.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/9D79GLmGG8.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/hmgII845BJ.jpg?imageslim">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s05.jpg">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s06.jpg">
 <meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170905/5j8eG5giBF.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170905/gIaiDi9edF.jpg?imageslim">
-<meta property="og:updated_time" content="2018-11-11T10:53:24.563Z">
+<meta property="og:updated_time" content="2019-02-25T15:58:46.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于BDP数据可视化平台的知乎用户分析">
 <meta name="twitter:description" content="涉及 Java线程池、连接池 pc端、手机端抓包 Jsoup、正则分析 数据库JDBC BDP数据分析平台 多知乎账号防封号">
-<meta name="twitter:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/3hJ9gd5mBH.jpg?imageslim">
+<meta name="twitter:image" content="http://caoxuhua.cn/images/blog1/s01.jpg">
 
 
 
@@ -298,6 +297,12 @@
         
 
         <div class="post-meta">
+			 
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+		
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -407,7 +412,7 @@
       
 
       
-        <p><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/3hJ9gd5mBH.jpg?imageslim" alt="mark"></p>
+        <p><img src="http://caoxuhua.cn/images/blog1/s01.jpg" alt="mark"></p>
 <h2 id="涉及"><a href="#涉及" class="headerlink" title="涉及"></a>涉及</h2><ul>
 <li>Java线程池、连接池</li>
 <li>pc端、手机端抓包</li>
@@ -424,9 +429,9 @@
 <hr>
 <h2 id="第一步：获取主话题ID"><a href="#第一步：获取主话题ID" class="headerlink" title="第一步：获取主话题ID"></a>第一步：获取主话题ID</h2><p><strong>对应Main.java中的函数getTopicID()</strong></p>
 <ol>
-<li>进入<strong><a href="https://www.zhihu.com/topics" target="_blank" rel="external">https://www.zhihu.com/topics</a></strong>,右键话题审查元素<br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170828/6KiFLd786A.jpg?imageslim" alt="mark"><br>获取完话题首页的话题ID后，程序进入下一步。<h2 id="第二步：获取分话题ID"><a href="#第二步：获取分话题ID" class="headerlink" title="第二步：获取分话题ID"></a>第二步：获取分话题ID</h2><strong>对应的类HandleTopic.java</strong></li>
+<li>进入<strong><a href="https://www.zhihu.com/topics" target="_blank" rel="external">https://www.zhihu.com/topics</a></strong>,右键话题审查元素<br><img src="http://caoxuhua.cn/images/blog1/s03.jpg" alt="mark"><br>获取完话题首页的话题ID后，程序进入下一步。<h2 id="第二步：获取分话题ID"><a href="#第二步：获取分话题ID" class="headerlink" title="第二步：获取分话题ID"></a>第二步：获取分话题ID</h2><strong>对应的类HandleTopic.java</strong></li>
 </ol>
-<p> <img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/eH1hBgfBbA.jpg?imageslim" alt="mark"></p>
+<p> <img src="http://caoxuhua.cn/images/blog1/s04.jpg" alt="mark"></p>
 <ol>
 <li>如图所示，进入主话题页面如 <strong><a href="https://www.zhihu.com/topics#互联网" target="_blank" rel="external">https://www.zhihu.com/topics#互联网</a></strong> ，每次下拉会刷新出20个分话题</li>
 <li>分析post发送的包可以看出，topic_id对应话题ID，offset为偏移量，比如发送0，则返回0-20的分话题</li>
@@ -439,8 +444,8 @@
 </ol>
 <h2 id="第四步：模拟手机发包获取用户信息"><a href="#第四步：模拟手机发包获取用户信息" class="headerlink" title="第四步：模拟手机发包获取用户信息"></a>第四步：模拟手机发包获取用户信息</h2><p><strong>对应GetUserInfo.java，为什么要模拟手机发包，因为pc端许多用户信息被隐藏了，而手机端可以访问</strong> </p>
 <ol>
-<li>改ua头，推荐使用fiddler抓包（不懂手机抓包可百度），手机抓包状态访问知乎，得到对应的<strong>cookie</strong>和<strong>User-Agent</strong><br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/9D79GLmGG8.jpg?imageslim" alt="mark"></li>
-<li>运行程序开始模拟手机发包，收到的<strong>response</strong>中得到需要的信息，最后一共获得大概4W用户数据，后面爬取速度越来越慢，我就直接终止程序了。<br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/hmgII845BJ.jpg?imageslim" alt="mark"></li>
+<li>改ua头，推荐使用fiddler抓包（不懂手机抓包可百度），手机抓包状态访问知乎，得到对应的<strong>cookie</strong>和<strong>User-Agent</strong><br><img src="http://caoxuhua.cn/images/blog1/s05.jpg" alt="mark"></li>
+<li>运行程序开始模拟手机发包，收到的<strong>response</strong>中得到需要的信息，最后一共获得大概4W用户数据，后面爬取速度越来越慢，我就直接终止程序了。<br><img src="http://caoxuhua.cn/images/blog1/s06.jpg" alt="mark"></li>
 </ol>
 <h2 id="第五步：数据导入BDP数据分析平台"><a href="#第五步：数据导入BDP数据分析平台" class="headerlink" title="第五步：数据导入BDP数据分析平台"></a>第五步：数据导入BDP数据分析平台</h2><ol>
 <li>注册BDP个人版，可以直接导入MySQL表，但需要开会员，推荐把sql文件转为excel文件，再导入，这样免费。</li>
@@ -448,7 +453,7 @@
 </ol>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><ul>
 <li>程序用到了jsoup、httpclient、JDBC需要自己添加jar包</li>
-<li>先前使用单账号，跑到几十分钟，爬不到数据，被知乎封了账号。后来问了人知道了多账号避免封号的方法，需要购买知乎账号，要使用EditThisCookie，登陆每个知乎账号，记录z_co,然后用EditThisCookie插件清除cookie记录，再登陆另外的账号，记录，知乎通过这个预判用户。<br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170905/5j8eG5giBF.jpg?imageslim" alt="mark"><br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170905/gIaiDi9edF.jpg?imageslim" alt="mark"></li>
+<li>先前使用单账号，跑到几十分钟，爬不到数据，被知乎封了账号。后来问了人知道了多账号避免封号的方法，需要购买知乎账号，要使用EditThisCookie，登陆每个知乎账号，记录z_co,然后用EditThisCookie插件清除cookie记录，再登陆另外的账号，记录，知乎通过这个预判用户。<br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170905/5j8eG5giBF.jpg?imageslim" alt="mark"></li>
 </ul>
 
       
@@ -696,7 +701,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
