@@ -105,12 +105,10 @@
 <meta property="og:image" content="http://caoxuhua.cn/images/blog1/s01.jpg">
 <meta property="og:image" content="http://caoxuhua.cn/images/blog1/s03.jpg">
 <meta property="og:image" content="http://caoxuhua.cn/images/blog1/s04.jpg">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/80j8l5j9jE.jpg?imageslim">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170904/bihm9mjC05.jpg?imageslim">
 <meta property="og:image" content="http://caoxuhua.cn/images/blog1/s05.jpg">
 <meta property="og:image" content="http://caoxuhua.cn/images/blog1/s06.jpg">
-<meta property="og:image" content="http://ouxp7c91b.bkt.clouddn.com/blog/170905/5j8eG5giBF.jpg?imageslim">
-<meta property="og:updated_time" content="2019-02-25T15:58:46.393Z">
+<meta property="og:image" content="http://caoxuhua.cn/images/blog1/s07.jpg">
+<meta property="og:updated_time" content="2019-02-25T16:03:15.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于BDP数据可视化平台的知乎用户分析">
 <meta name="twitter:description" content="涉及 Java线程池、连接池 pc端、手机端抓包 Jsoup、正则分析 数据库JDBC BDP数据分析平台 多知乎账号防封号">
@@ -437,9 +435,9 @@
 <li>分析post发送的包可以看出，topic_id对应话题ID，offset为偏移量，比如发送0，则返回0-20的分话题</li>
 <li>每个主话题创建一个线程，发送包给服务器，并从返回的json信息中获得分话题ID,一共获得约1.6w个分话题ID</li>
 </ol>
-<h2 id="第三步：获得用户ID"><a href="#第三步：获得用户ID" class="headerlink" title="第三步：获得用户ID"></a>第三步：获得用户ID</h2><p><strong>对应GetUserUrl.java ,这一步需要设置post参数，登陆状态下才能访问下面的页面</strong><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/80j8l5j9jE.jpg?imageslim" alt="mark"></p>
+<h2 id="第三步：获得用户ID"><a href="#第三步：获得用户ID" class="headerlink" title="第三步：获得用户ID"></a>第三步：获得用户ID</h2><p><strong>对应GetUserUrl.java ,这一步需要设置post参数，登陆状态下才能访问下面的页面</strong></p>
 <ol>
-<li>要设置<strong>cookie</strong> 和<strong>X-Xsrftoken</strong>才能爬取，同样，分析post发送的包，每次下拉刷新20个用户<img src="http://ouxp7c91b.bkt.clouddn.com/blog/170904/bihm9mjC05.jpg?imageslim" alt="mark"></li>
+<li>要设置<strong>cookie</strong> 和<strong>X-Xsrftoken</strong>才能爬取，同样，分析post发送的包，每次下拉刷新20个用户</li>
 <li>设置好后发包给服务器，从返回的<strong>response</strong>中提取出用户ID，因为程序运行13个小时的时候突然断网，只爬到了4.5w用户ID</li>
 </ol>
 <h2 id="第四步：模拟手机发包获取用户信息"><a href="#第四步：模拟手机发包获取用户信息" class="headerlink" title="第四步：模拟手机发包获取用户信息"></a>第四步：模拟手机发包获取用户信息</h2><p><strong>对应GetUserInfo.java，为什么要模拟手机发包，因为pc端许多用户信息被隐藏了，而手机端可以访问</strong> </p>
@@ -453,7 +451,7 @@
 </ol>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><ul>
 <li>程序用到了jsoup、httpclient、JDBC需要自己添加jar包</li>
-<li>先前使用单账号，跑到几十分钟，爬不到数据，被知乎封了账号。后来问了人知道了多账号避免封号的方法，需要购买知乎账号，要使用EditThisCookie，登陆每个知乎账号，记录z_co,然后用EditThisCookie插件清除cookie记录，再登陆另外的账号，记录，知乎通过这个预判用户。<br><img src="http://ouxp7c91b.bkt.clouddn.com/blog/170905/5j8eG5giBF.jpg?imageslim" alt="mark"></li>
+<li>先前使用单账号，跑到几十分钟，爬不到数据，被知乎封了账号。后来问了人知道了多账号避免封号的方法，需要购买知乎账号，要使用EditThisCookie，登陆每个知乎账号，记录z_co,然后用EditThisCookie插件清除cookie记录，再登陆另外的账号，记录，知乎通过这个预判用户。<br><img src="http://caoxuhua.cn/images/blog1/s07.jpg" alt="mark"></li>
 </ul>
 
       
